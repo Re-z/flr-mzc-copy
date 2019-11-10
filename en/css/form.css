@@ -38,7 +38,7 @@
 	}
 }
 
-html {
+/* html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -56,9 +56,9 @@ body {
 
 h1 {
 	font-size: 2em;
-}
+} */
 
-hr {
+/* hr {
 	box-sizing: content-box;
 	height: 0;
 	overflow: visible;
@@ -206,7 +206,7 @@ summary {
   font-weight: 700;
   font-display: swap;
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOVuhs.ttf) format("truetype");
-}
+} */
 
 .container {
 	box-sizing: border-box;
@@ -1036,9 +1036,9 @@ summary {
 	padding: 0;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
 	padding: 0;
-}
+} */
 
 .select2-container--classic .select2-results__option[aria-disabled=true] {
 	color: gray;
@@ -1055,9 +1055,9 @@ h1, h2, h3 {
 	padding: 6px;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
 	margin: 0;
-}
+} */
 
 .title {
 	font-size: 30px;
@@ -1121,14 +1121,14 @@ h1, h2, h3 {
 	}
 }
 
-ul {
+/* ul {
 	list-style: none;
 }
 
 p, ul {
 	padding: 0;
 	margin: 0;
-}
+} */
 
 .text {
 	font-size: 16px;
@@ -2382,7 +2382,7 @@ form .form-btn .loader {
 }
 
 .register-form-title span {
-	border-bottom: 5px solid orange;
+	border-bottom: 5px solid #40aeee;
 }
 
 .register-form-descr {
@@ -2403,6 +2403,9 @@ form .form-btn .loader {
 	.register-wrapper {
 		padding: 50px 0 80px;
 	}
+}
+#sendForm input::placeholder {
+	font-weight: normal !important;
 }
 
 /*# sourceMappingURL=style.min.css.map */
