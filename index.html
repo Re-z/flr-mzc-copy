@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crypto Crash Fortune</title>
 	<link rel="stylesheet" href="en/css/style.css">
-	<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+	<link rel="stylesheet" href="en/css/form.css">
 	<script>
-			var srcUtils = "intlTel/js/utils.js"
-		</script>
+		var srcUtils = "intlTel/js/utils.js"
+	</script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
 	<link rel="manifest" href="images/favicons/site.webmanifest">
-	<link rel="stylesheet" href="en/css/form.css">
     <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#f39200">
     <meta name="msapplication-TileColor" content="#f39200">
     <meta name="theme-color" content="#f39200">
@@ -49,7 +48,7 @@
                     <div class="col-md-7 col-sm-10 col-lg-7">
                         <h1>Benefit from bitcoin even when the crypto markets are crashing.</h1>
                         <h2>
-							<strong><a href="#topForm"><strong>Join today</strong></a> and see how much you can make</strong> <br>                         
+							<strong><a href="#sendForm"><strong>Join today</strong></a> and see how much you can make</strong> <br>                         
 						</h2>
                     </div>
                 </div>
@@ -59,9 +58,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-						<iframe src="https://player.vimeo.com/video/323785939?app_id=122963" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe>
+						<iframe src="https://player.vimeo.com/video/323785939?app_id=122963" id="videoPlayer" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" data-ready="true"></iframe>
                     </div>
                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<div class="formHeader" id="topForm">
+									Sign Up Below <span>and we’ll guide you through the process.</span>
+									<div class="arrowSVG">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30.5px" height="104.2px" viewBox="0 0 30.5 104.2" style="enable-background:new 0 0 30.5 104.2;" xml:space="preserve">
+										<style type="text/css">
+											.arrowShape{fill:#93C01F;}
+										</style>
+										<defs>
+										</defs>
+										<path class="arrowShape" d="M9.2,75l-6.8-4.6L0,104.2l30.5-14.9l-7-4.7c2.3-6.9,3.6-14,4-21.1c0.4-8.3-0.4-16.6-2.5-24.4
+										c-2.1-7.8-5.3-15.2-9.6-21.8C11.1,10.7,5.9,4.9,0,0c4.8,5.9,8.7,12.5,11.4,19.4c2.7,6.9,4.3,14.1,4.7,21.3c0.4,7.2-0.2,14.3-2,21
+										C13,66.3,11.3,70.8,9.2,75z"></path>
+										</svg>
+									</div>
+								</div>
 							<div class="register-form-wrapper" id="sendForm">
 									<div class="register-form-title title"><span>Create an Account</span> </div>
 									<form class="register-form form" action="https://www.monfex.com/api/register" method="post" novalidate="">
@@ -2235,8 +2249,8 @@
                 <h1 class="text-center">Sign Up Below <span style="font-size:60%">and we’ll guide you through the process.</span>
 				</h1>
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-lg-4 col-lg-offset-4">
-							<div class="register-form-wrapper" id="sendForm">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-lg-5 col-lg-offset-4">
+							<div class="register-form-wrapper" id="footerForm">
 									<div class="register-form-title title"><span>Create an Account</span> </div>
 									<form class="register-form form" action="https://www.monfex.com/api/register" method="post" novalidate="">
 									  <label class="form-input">
@@ -3752,7 +3766,7 @@
                     <p>
                         Copyright 2019 Crypto Crash Fortune
                     </p>
-                    <p><a href="legal/privacy-policy.html" target="_blank">Privacy Policy</a> <a href="legal/terms.html" target="_blank">Terms</a> <a href="legal/spam-policy.html" target="_blank">Spam Policy</a></p>
+                    <p><a href="https://www.monfex.com/privacy-policy" target="_blank">Privacy Policy</a> <a href="https://www.monfex.com/terms-of-service" target="_blank">Terms</a> <a href="legal/spam-policy.html" target="_blank">Spam Policy</a></p>
                 </div>
                 <div class="disclaimerFooter" id="disclaimertext">
                     <p><strong>IMPORTANT</strong>: Earnings and Legal Disclaimers</p>
@@ -3764,7 +3778,6 @@
         </footer>
 	</div>
 	<script src="js/app.js"></script>
-    <script src="js/js.cookie.min.js"></script>
     <script src="en/js/bundle.min.4a5c20731f8e0633cc0d56c3b7fb330d422cbe406f6025111e13729627233e38.js"></script>
 </body>
 

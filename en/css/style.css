@@ -238,7 +238,9 @@ td,
 th {
     padding: 0
 }
-
+#videoPlayer {
+    width: 100%;
+}
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
@@ -7885,8 +7887,8 @@ button.close {
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
-    src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+    src: url("../fonts/fontawesome-webfont.eot");
+    src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -12164,7 +12166,7 @@ section.video .videoWrapper {
     }
 }
 
-section.video .registerForm .formHeader {
+.formHeader {
     text-align: center;
     font-family: "Source Serif Pro", serif;
     font-size: 2em;
@@ -12174,17 +12176,17 @@ section.video .registerForm .formHeader {
     z-index: 10
 }
 
-section.video .registerForm .formHeader span {
+.formHeader span {
     text-transform: none
 }
 
-section.video .registerForm .formHeader .arrowSVG svg {
+.formHeader .arrowSVG svg {
     width: auto;
     position: absolute
 }
 
 @media screen and (min-width: 992px) {
-    section.video .registerForm .formHeader .arrowSVG svg {
+    .formHeader .arrowSVG svg {
         height: 160px;
         right: 20px;
         bottom: -110px
@@ -12192,7 +12194,7 @@ section.video .registerForm .formHeader .arrowSVG svg {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    section.video .registerForm .formHeader .arrowSVG svg {
+    .formHeader .arrowSVG svg {
         height: 80px;
         right: 10px;
         bottom: -30px
@@ -12200,19 +12202,19 @@ section.video .registerForm .formHeader .arrowSVG svg {
 }
 
 @media screen and (max-width: 767px) {
-    section.video .registerForm .formHeader .arrowSVG svg {
+    .formHeader .arrowSVG svg {
         height: 60px;
         right: 10px;
         bottom: -20px
     }
 }
 
-section.video .registerForm .formHeader .arrowSVG svg .arrowShape {
+.formHeader .arrowSVG svg .arrowShape {
     fill: #95c11f
 }
 
 @media screen and (min-width: 992px) {
-    section.video .registerForm .formHeader {
+    .formHeader {
         position: absolute;
         top: -50px;
         left: -1px;
@@ -12229,11 +12231,11 @@ section.video .registerForm .formHeader .arrowSVG svg .arrowShape {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    section.video .registerForm .formHeader {
+    .formHeader {
         position: relative;
         margin-left: -15px;
         margin-right: -15px;
-        margin-top: -20px;
+        /* margin-top: -20px; */
         margin-bottom: 20px;
         padding: 20px 30px;
         background: #f39200;
@@ -12243,12 +12245,12 @@ section.video .registerForm .formHeader .arrowSVG svg .arrowShape {
 }
 
 @media screen and (min-width: 401px) and (max-width: 767px) {
-    section.video .registerForm .formHeader {
+    .formHeader {
         position: relative;
         font-size: 1em;
         margin-left: -30px;
         margin-right: -30px;
-        margin-top: -35px;
+        /* margin-top: -35px; */
         margin-bottom: 20px;
         padding: 15px 40px;
         background: #f39200;
@@ -12258,12 +12260,12 @@ section.video .registerForm .formHeader .arrowSVG svg .arrowShape {
 }
 
 @media screen and (max-width: 400px) {
-    section.video .registerForm .formHeader {
+    .formHeader {
         position: relative;
         font-size: 1em;
         margin-left: -15px;
         margin-right: -15px;
-        margin-top: -20px;
+        /* margin-top: -20px; */
         margin-bottom: 20px;
         padding: 15px 40px;
         background: #f39200;
@@ -12273,7 +12275,7 @@ section.video .registerForm .formHeader .arrowSVG svg .arrowShape {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    section.video .registerForm .formHeader {
+    .formHeader {
         font-size: 1.5em
     }
 }
